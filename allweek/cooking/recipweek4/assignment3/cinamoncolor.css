@@ -1,0 +1,194 @@
+body {
+    background-color: rosybrown;
+}
+
+hr{
+    height: 3px;
+    background-color: brown;
+    border-radius: 25px;
+}
+
+div{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:link{
+    color: burlywood;
+}
+
+a:visited{
+    color: brown;
+}
+
+a:hover{
+    color: chocolate;
+}
+
+a:active{
+    color: saddlebrown;
+}
+
+#H1 {
+    color: wheat;
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: sandybrown;
+}
+
+#TopicCinnamonPic{
+  
+    border-radius: 25px;
+    border: 4px dashed wheat;
+    padding: 5px;
+    
+}
+
+#IngredientPic{
+    float: right;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#MethodPic{
+    float: right;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.roundBorder25{
+    border-radius: 25px;
+    border: 4px dashed wheat;
+    padding: 5px;
+}
+
+.parent{
+    flex-wrap: wrap;
+    display: inline block;
+    text-align: center;
+}
+
+.flex_container{
+    display: flex;
+}
+
+.centerPage{
+    text-align: center;
+}
+
+.middleVertical{
+    vertical-align: middle;
+}
+
+.boldText{
+    font-weight: bold;
+    color: wheat;
+}
+
+.marginTopDown10{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-gap: 10px;
+}
+
+#header {
+    grid-column: 1 / span 3;
+}
+
+#menu {
+    grid-column: 1 / span 1;
+}
+
+#main {
+    grid-column: 2 / span 1;
+}
+
+#right{
+    grid-column: 3/ span 1;
+}
+
+#footer {
+    grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: black;
+    }
+
+    div {
+        font-size: 24px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: cornsilk;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    #header {
+        grid-column: 1 / span 3;
+    }
+
+    #menu {
+        grid-column: 1 / span 1;
+    }
+    
+    #main {
+        grid-column: 2 / span 1;
+    }
+
+    #right{
+        grid-column: 1/ span 2;
+    }
+
+    #footer {
+        grid-column: 1/ span 2;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        background-color: chocolate;
+    }
+
+    div {
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+        color: cornsilk;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    #header {
+        grid-column: 1 / span 1;
+    }
+
+    #menu {
+        grid-column: 1 / span 1;
+    }
+    
+    #main {
+        grid-column: 1 / span 1;
+    }
+
+    #right{
+        grid-column: 1/ span 1;
+    }
+
+    #footer {
+        grid-column: 1/ span 1;
+    }
+}
